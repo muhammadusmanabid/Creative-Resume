@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #003366;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #003366;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.name-title h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #003366;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.name-title p {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    color: #666;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Text Styles */
+.about-me p, .experience .job p, .education .school p {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Contact Info and List Styles */
+.contact-info, .languages ul, .skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+.contact-info .icon {
+    margin-right: 10px;
+}
+
+.languages ul, .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.languages li, .skills li {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+/* Experience and Education Styles */
+.experience .job, .education .school {
+    margin-bottom: 15px;
+}
+
+.experience .job h3, .education .school h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+.experience .job p, .education .school p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .name-title h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
